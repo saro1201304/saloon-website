@@ -1,67 +1,143 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>LuxeGlow Salon</title>
-  <link rel="stylesheet" href="style.css"/>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #111;
+      color: white;
+    }
+
+    header {
+      background: linear-gradient(to right, #ffb347, #ffcc33);
+      padding: 20px;
+      text-align: center;
+      color: black;
+    }
+
+    nav a {
+      margin: 10px;
+      color: black;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .hero {
+      padding: 80px 20px;
+      text-align: center;
+      background: #1c1c1c;
+    }
+
+    .hero h1 {
+      font-size: 40px;
+      color: #ffcc33;
+    }
+
+    .hero p {
+      font-size: 18px;
+      opacity: 0.8;
+    }
+
+    section {
+      padding: 40px 20px;
+      text-align: center;
+    }
+
+    .services div {
+      margin: 10px;
+      padding: 15px;
+      background: #222;
+      border-radius: 8px;
+    }
+
+    .review {
+      background: #222;
+      padding: 15px;
+      margin: 10px;
+      border-radius: 8px;
+    }
+
+    .contact a {
+      color: #ffcc33;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .whatsapp-btn {
+      display: inline-block;
+      margin-top: 15px;
+      padding: 10px 18px;
+      background: #25D366;
+      color: white;
+      border-radius: 5px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    footer {
+      background: #000;
+      padding: 15px;
+      font-size: 14px;
+    }
+  </style>
 </head>
 <body>
 
 <header>
-  <h1>LuxeGlow</h1>
+  <h2>LuxeGlow Salon</h2>
   <nav>
     <a href="#services">Services</a>
-    <a href="#gallery">Gallery</a>
     <a href="#reviews">Reviews</a>
     <a href="#contact">Contact</a>
   </nav>
 </header>
 
 <section class="hero">
-  <h2>Premium Salon Experience</h2>
-  <p>Luxury grooming with modern style.</p>
-  <button class="btn" onclick="scrollToSection('contact')">Book Now</button>
+  <h1>Premium Salon Website Design</h1>
+  <p>Modern, Stylish & Mobile-Friendly Websites for Salons</p>
 </section>
 
-<section id="services">
+<section id="services" class="services">
   <h2>Our Services</h2>
-  <div class="grid">
-    <div class="card">Hair Styling</div>
-    <div class="card">Beard Grooming</div>
-    <div class="card">Facial & Skin Care</div>
-    <div class="card">Bridal Makeup</div>
-  </div>
-</section>
-
-<section id="gallery" class="gallery">
-  <h2>Gallery</h2>
-  <div class="grid">
-    <img src="https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9"/>
-    <img src="https://images.unsplash.com/photo-1595476108010-b4d1f102b1b1"/>
-    <img src="https://images.unsplash.com/photo-1512496015851-a90fb38ba796"/>
-  </div>
+  <div>Haircut & Styling</div>
+  <div>Facial & Skincare</div>
+  <div>Hair Coloring</div>
+  <div>Bridal Makeup</div>
 </section>
 
 <section id="reviews">
   <h2>Client Reviews</h2>
-  <div class="review">⭐⭐⭐⭐⭐ Best salon experience! — vicky</div>
-  <div class="review">Loved the ambience and styling. — Priya</div>
+  <div class="review">⭐⭐⭐⭐⭐ Best salon experience! – Vicky</div>
+  <div class="review">Loved the ambience and styling. – Priya</div>
 </section>
 
 <section id="contact" class="contact">
   <h2>Contact</h2>
-  <p>Email: saro1201304@gmail.com</p>
+
+  <p>
+    Email:
+    <a href="mailto:saro1201304@gmail.com">
+      saro1201304@gmail.com
+    </a>
+  </p>
+
   <p>Location: Madurai, India</p>
+
+  <!-- WhatsApp button -->
+  <a class="whatsapp-btn"
+     href="https://wa.me/9360139443"
+     target="_blank">
+     Chat on WhatsApp
+  </a>
 </section>
 
 <footer>
-  © 2026 LuxeGlow | Designed by Saro Web Designer 🚀
+  © 2026 LuxeGlow Salon. All Rights Reserved.
 </footer>
 
-<a class="whatsapp" href="https://wa.me/9360139443" target="_blank">WhatsApp</a>
-
-<script src="script.js"></script>
 </body>
 </html>
